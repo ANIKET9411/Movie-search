@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding:0;
+            margin:0;
+        }
+        h1{
+            font-size: 3rem;
+            color: white;
+            background-color: #4e4e4e;
+        }
+        .container{
+            text-align: center;
+            padding-bottom:2%;
+        }
+        img {
+            height: 300px;
+            width: 200px;
+            box-shadow: 0 0 20px 0 #4e4e4e;
+        }
+        .page,.next,.prev{
+            display: none;
+        }
+        .movie-list{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content:  center;
+            align-items: center;
+            padding:2%;
+        }
+        .thought{
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>HOOKED</h1>
+        <input type="text">
+        <p class="thought">Sharing a few of our favourite movies</p>
+        <div class="movie-list"></div>
+        <button class="prev">Previous</button>
+        <span class="page"></span>
+        <button class="next">Next</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
