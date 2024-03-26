@@ -17,7 +17,7 @@ function debounce(fn, delay) {
     }
 }
 async function fetchApi() {
-    let response = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=161d4e6d&s=${search.value}&page=${page}`);
+    let response = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=161d4e6d&s=${search.value}&page=${page}`);
     let data = await response.json();
     console.log(data);
     MovieL = [];
